@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ThGoldToday</title>
+    <link rel="stylesheet" href="themes/temas.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="jquery-mobile/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="splash"> 
+	<div class="splash">
+        <img src="res/screen/splash.png" alt="Cargando ThGoldToday" />
+    
+    <script type='text/javascript'>
+                $(window).load(function(){
+                $(function() {
+                    setTimeout(hideSplash, 4000);
+                            });
+    
+                function hideSplash() {
+                $.mobile.changePage("#inicio", "fade");
+                }
+    
+    
+                });  
+    </script>
+
+	</div>
+</div>
+
+
+
+<div data-role="page" id="inicio">
+
+		<div data-role="header" data-theme="b">
+			<h1><img src="images/logo.png" style="height:100%; width:100%;"></h1>
+		</div>
+
+		<div data-role="content" data-theme="b">
+        
+        
+        <ul data-role="listview" data-inset="true" data-split-icon="gear" >
+			<li data-role="list-divider">Precio de los Minerales</li>
+				<li>
+					<table width="100%" border="0">
+                      <tr>
+                        <td width="27%">Oro</td>
+                        <td width="33%">Efectivo</td>
+                        <td width="40%">100.000,00 Bs.F.</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>Transferencia</td>
+                        <td>105.000,00 Bs.F.</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>Plata</td>
+                        <td>Efectivo</td>
+                        <td>5.000,00 Bs.F.</td>
+                      </tr>
+                    </table>
+
+				</li>
+		</ul>
+        
+		
+        <ul data-role="listview" data-inset="true" data-split-icon="gear" data-split-theme="d">
+			<li data-role="list-divider">Divisas Extrangeras</li>
+				<li>
+					<table width="100%" border="0">
+                      <tr>
+                        <td width="27%">Dolar</td>
+                        <td width="33%">&nbsp;</td>
+                        <td width="40%">4.000,00 Bs.F.</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>Euro</td>
+                        <td>&nbsp;</td>
+                        <td>4.500,00 Bs.F.</td>
+                      </tr>
+                    </table>
+
+				</li>
+		</ul>
+
+		</div>
+		<div data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#informacion" data-icon="info" data-theme="b">Información</a>
+                </ul>
+            </nav>
+		</div>
+</div>
+    
+<div data-role="page" id="informacion">
+
+		<div data-role="header" data-theme="b">
+        	<h1><a href="#inicio"><img src="images/logo.png"  style="height:100%; width:100%;"></a></h1>
+		</div>
+
+		<div data-role="content">
+            <p>Infomación de contacto:</p>
+            <p>Thaisir Elhani</p>
+            <p>Teléfono:</p>
+            <p>0424-908.12.56</p>
+            <p>Ubicación:</p>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d493.4180152138531!2d-62.6621571410398!3d8.36776933537137!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1488340987489" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#informacion" data-icon="info" data-theme="b">Información</a>
+                </ul>
+            </nav>
+		</div>
+	  </div>
+</div>
+ </body>
+</html>
